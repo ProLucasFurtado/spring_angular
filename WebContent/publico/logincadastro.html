@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		
+		<title>Cadastre-se</title>
+		
+		<!-- Required meta tags -->
+    	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="../resources/css/estilo.css">
+		
+	</head>
+	
+<body>
+	<h1  align="center">Para chegar ao topo, o que importa é começar!</h1>
+	<div class="tela-logincadastro">
+		  <form class="px-4 py-3" id="formulario" name="formulario">
+		  
+		    <div class="form-group">
+		      <label for="usuario">Usuario</label>
+		      <input type="text" ng-model="usuario.login"
+		      class="form-control border-input" id="usuario" placeholder="Usuario" required="required">
+		    </div>
+		    
+		    <div class="form-group">
+		      <label for="senha">Senha</label>
+		      <input type="password" ng-model="usuario.senha"
+		      class="form-control border-input" id="senha" placeholder="Senha" required="required">
+		    </div>
+		    
+		    <div classe="row" align="center" ng-required="true">
+		    	<div class="col-md-6">
+				   	<div class="form-check">
+				   		<label class="form-check-label" for="cliente">Cliente </label>
+					 	<input type="radio" ng-model="usuarioacesso.acesso"
+					 	class="form-check-input" name="acesso" id="cliente" value="CLIENTE" checked ng-checked="true">
+					</div>
+				</div>
+				
+				<div class="col-md-6">
+					<div class="form-check">
+						<label class="form-check-label" for="fornecedor">Fornecedor </label>
+					  	<input type="radio" ng-model="usuarioacesso.acesso"
+					  	class="form-check-input" name="acesso" id="fornecedor" value="FORNECEDOR">
+					</div>
+				</div>
+		   	</div>
+		    <button type="submit" class="btn btn-primary btn-block" id="buttonLogin">Aceite e cadastre-se</button>
+		  </form>
+		   
+		  <div class="dropdown-divider"></div><br>
+		  <div>
+		  	<p align="center">Já se cadastrou? <a href="login.html">Entre</a></p>
+		  	<p align="justify">Ao clicar em Aceite e cadastre-se, você aceita o <a href="#">Contrato do Usuário</a>, a <a href="#">Política de Privacidade</a> e a <a href="#">Política de Cookies</a> do Lucas Furtado</p>
+		  </div>
+	</div>
+
+</body>
+</html>

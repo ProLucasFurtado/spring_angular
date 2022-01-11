@@ -1,0 +1,51 @@
+<!DOCTYPE> 
+<html lang="pt-br">
+	<head>
+		
+		<title>Login</title>
+		
+		<!-- Required meta tags -->
+    	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="../resources/css/estilo.css">
+		
+	</head>
+	
+<body>
+
+	<div class="tela-login">
+		  <form class="px-4 py-3" id="formulario" method="post" name="formulario"
+			action="/spring_angular/j_spring_security_check">
+		  	
+		  	<h2>Entrar</h2>
+		  	<p>Matenha-se atualizado com livros do seu mundo profissional</p>
+		    <div class="form-group">
+		      <label for="j_username">Usuario</label>
+		      <input type="text" class="form-control" name="j_username" id="j_username" placeholder="Usuario">
+		    </div>
+		    <div class="form-group">
+		      <label for="j_password">Senha</label>
+		      <input type="password" class="form-control" name="j_password" id="j_password" placeholder="Senha">
+		    </div>
+		    
+		      <div class="form-group form-check">
+		        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+		        <label class="form-check-label" for="dropdownCheck">
+		          Lembre de mim
+		        </label>
+		      </div>
+		   
+		    <button type="submit" class="btn btn-primary btn-block" id="buttonLogin">Entrar</button>
+		  </form>
+		  <div class="dropdown-divider"></div><br>
+		  <div align="center">
+		  	<p>Novo por aqui? <a  href="logincadastro.html" role="cadastro">Cadastre-se</a></p>
+		  	<a href="#">Esqueceu a senha?</a>
+		  </div>
+	</div>
+
+</body>
+</html>
